@@ -8,11 +8,14 @@ When `nuxt-i18n-micro` is disabled, it correctly prerenders the routes defined i
 
 ## Steps to reproduce
 
+`nuxt-i18n-micro` enabled, prerendering additional routes.
+
 1. run `pnpm build`
 2. See log for `[PRERENDER:ROUTES]`
 3. See `Initializing prerenderer, Prerendering routes` log
 4. Notice they are including `promo-offers/:code()` now in the prerender list
 
+`nuxt-i18n-micro` disabled, prerender only specified routes.
 
 1. Comment out the `nuxt-i18n-micro` module in `nuxt.config.ts`
 2. run `pnpm build`
