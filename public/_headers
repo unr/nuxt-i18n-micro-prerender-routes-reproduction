@@ -1,0 +1,15 @@
+# public/_headers
+
+# Trying ISR / SSR caching on CF PAges
+/fetch-data
+  Cache-Control: public, max-age=3600, s-maxage=3600
+  CDN-Cache-Control: max-age=3600
+  Cloudflare-CDN-Cache-Control: max-age=3600
+  Vary: Accept-Encoding
+
+# Trying to prerender, and manually test caching worked
+/isr-debug
+  Cache-Control: public, max-age=60, s-maxage=60
+  CDN-Cache-Control: max-age=60
+  Cloudflare-CDN-Cache-Control: max-age=60
+  Vary: Accept-Encoding
