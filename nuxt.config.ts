@@ -33,15 +33,16 @@ export default defineNuxtConfig({
 
 		// Weird issue with nuxt-i18n-micro, where it seems to crawls extra routes based on lang
 		// /on/home gets crawled as /on/home, /on/on/home, /on/es/home, /on/pt/home
-		"/on/on/**": { ssr: false, prerender: false },
-		"/on/es/**": { ssr: false, prerender: false },
-		"/on/pt/**": { ssr: false, prerender: false },
-		"/pt/on/**": { ssr: false, prerender: false },
-		"/pt/es/**": { ssr: false, prerender: false },
-		"/pt/pt/**": { ssr: false, prerender: false },
-		"/es/on/**": { ssr: false, prerender: false },
-		"/es/es/**": { ssr: false, prerender: false },
-		"/es/pt/**": { ssr: false, prerender: false },
+		// Commenting these out, reintroduces the issue.
+		// "/on/on/**": { ssr: false, prerender: false },
+		// "/on/es/**": { ssr: false, prerender: false },
+		// "/on/pt/**": { ssr: false, prerender: false },
+		// "/pt/on/**": { ssr: false, prerender: false },
+		// "/pt/es/**": { ssr: false, prerender: false },
+		// "/pt/pt/**": { ssr: false, prerender: false },
+		// "/es/on/**": { ssr: false, prerender: false },
+		// "/es/es/**": { ssr: false, prerender: false },
+		// "/es/pt/**": { ssr: false, prerender: false },
 
 		// Static marketing page with components test
 		"/marketing-page": {
